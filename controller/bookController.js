@@ -187,8 +187,8 @@ exports.makeBookPaymentController = async (req, res) => {
             mode: 'payment',
             // success_url: 'http://localhost:5173/payment-success',
             // cancel_url: 'http://localhost:5173/payment-error',
-             success_url: 'https://bookstore-backend-nfm1.onrender.com/payment-success',
-            cancel_url: 'https://bookstore-backend-nfm1.onrender.com/payment-error',
+             success_url: 'book-store-frontend-kf1jn6672-alnas-projects-8a3bd7c9.vercel.app/payment-success',
+            cancel_url: 'book-store-frontend-kf1jn6672-alnas-projects-8a3bd7c9.vercel.app/payment-error',
         });
         console.log(session);
         res.status(200).json({ checkoutSessionUrl: session.url })
